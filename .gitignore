@@ -15,6 +15,7 @@
 .cache
 .husky
 .history
+docs
 dist
 
 # Node dependencies
