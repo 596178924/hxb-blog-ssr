@@ -1,0 +1,1 @@
+import{_ as e,g as o,w as _,h as a,o as n,a as c}from"./entry.QRIVGLgz.js";const s={},r=c("div",null,"default",-1);function u(l,d){const t=a;return n(),o(t,null,{default:_(()=>[r]),_:1})}const i=e(s,[["render",u]]);export{i as default};
