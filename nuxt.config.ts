@@ -35,7 +35,7 @@ export default defineNuxtConfig({
   // css: ['~/assets/style/scss/main.scss'],
   // 此处配置的目录中的任何组件都可以在整个页面、布局（和其他组件）中使用，而无需显式导入它们。
   imports: { dirs: ['types', 'stores', 'api'] },
-  build: { transpile: [/echarts/] },
+  build: { transpile: ['gsap'] },
   dayjs: {
     locales: ['en', 'zh-cn'],
     defaultLocale: 'zh-cn'
