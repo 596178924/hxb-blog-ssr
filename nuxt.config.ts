@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     baseURL: '/hxb-blog-ssr/',
-    buildAssetsDir: 'nuxt_assets',
+    // buildAssetsDir: 'nuxt_assets',
     head: {
       title: process.env.NUXT_TITLE,
       meta: [
