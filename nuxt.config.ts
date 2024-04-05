@@ -1,5 +1,5 @@
 const isProd = process.env.NODE_ENV === 'production'
-import path from 'path'
+// import path from 'path'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
@@ -71,9 +71,9 @@ export default defineNuxtConfig({
         target: 'esnext'
       }
     },
-    output: {
-      publicDir: path.join(__dirname, 'docs')
-    },
+    // output: {
+    //   publicDir: path.join(__dirname, 'docs')
+    // },
     devProxy: {
       host: '127.0.0.1'
     }
