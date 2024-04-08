@@ -1,0 +1,32 @@
+$breakpoints: (
+  'phone': (320px, 480px), // 手机
+  'ipad': (481px, 768px), // 平板
+  'notebook': (769px, 1440px), // 笔记本
+  'desktop': (1441px,1920px), // 桌面
+  'overstep': 1921px // 超大屏幕
+);
+// 视口调配,或许需要em单位
+@mixin responseTo($breakname) {
+  $bp: map-get($breakpoints, $breakname);
+  @if type-of($bp) == list {
+    @media only screen and (min-width: nth($bp, 1)) and (max-width: nth($bp, 2)){
+      @content;
+    }
+  } @else {
+    @media only screen and (min-width: $bp){
+      @content;
+    }
+  }
+}
+/*
+// 测试类
+.header {
+  height: 50px;
+  @include responseTo('ipad') {
+    height: 40px;
+  }
+   @include responseTo('phone') {
+    height: 30px;
+  }
+}
+*/
